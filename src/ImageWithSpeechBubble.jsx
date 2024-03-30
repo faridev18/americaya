@@ -1,20 +1,20 @@
 import React, { useEffect, useRef } from 'react';
 
 function ImageWithSpeechBubble({ src, alt, text }) {
-  const textRef = useRef(null); // Référence pour accéder directement à l'élément DOM de la bulle de texte
+  const textRef = useRef(null); 
 
   useEffect(() => {
     const changeBlinkingRate = () => {
-      const newDuration = Math.random() * 2 + 1; // Génère un nombre aléatoire entre 1 et 3 secondes
+      const newDuration = Math.random() * 2 + 1; 
       if (textRef.current) {
         textRef.current.style.animationDuration = `${newDuration}s`;
       }
     };
 
-    changeBlinkingRate(); // Changez la vitesse de clignotement initiale
-    const intervalId = setInterval(changeBlinkingRate, 2000); // Changez la vitesse toutes les 2 secondes
+    changeBlinkingRate(); 
+    const intervalId = setInterval(changeBlinkingRate, 2000); 
 
-    return () => clearInterval(intervalId); // Nettoyage à la désinscription
+    return () => clearInterval(intervalId); 
   }, []);
 
   return (

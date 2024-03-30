@@ -29,7 +29,7 @@ function App() {
       )}
 
       <div className='h-screen flex'>
-        {/* Bouton pour recharger la page et donc relancer les animations */}
+       
         <button onClick={() => window.location.reload()} className="mt-4 px-4 py-2 z-10 bg-blue-500 text-white font-semibold rounded hover:bg-blue-700 transition duration-300 ease-in-out transform -translate-x-1/2 left-1/2 fixed">
           Relancer
         </button>
@@ -41,7 +41,6 @@ function App() {
               animate={{ x: 0 }}
               transition={{ delay: 2, type: 'spring' }}
             />}
-            {/* Autres éléments animés ici */}
             {animate && <motion.div
               initial={{ x: '-100vw' }}
               animate={{ x: 0 }}
