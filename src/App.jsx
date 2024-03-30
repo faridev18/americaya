@@ -74,7 +74,7 @@ function App() {
         </div>
       </div>
       <div className=' fixed bottom-0 left-0 text-xs'>
-        Made with 🧠+🧡 by <a className=' text-blue-700' href="https://farihane.com/">Farihane</a>
+        Made with 🧠+🧡 by <a className=' text-blue-700' target='_blank' href="https://farihane.com/">Farihane</a>
       </div>
     </>
   );
