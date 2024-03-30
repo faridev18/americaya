@@ -1,0 +1,36 @@
+/* ImageWithSpeechBubble.css */
+.image-container {
+    position: relative;
+    display: inline-block; /* Permet à la bulle de texte de se positionner relativement à l'image */
+  }
+  
+  .speech-bubble {
+    position: absolute;
+    bottom: 100%; /* Positionnez au-dessus de l'image */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    text-align: center;
+    border: 2px solid black;
+    /* Ajoutez d'autres styles ici pour ressembler plus à une bulle de bande dessinée */
+  }
+  
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  
+  .blink-text {
+    animation-name: blink;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+  
+.image-with-speech-container {
+  position: relative;
+  display: inline-block; /* Assure que le conteneur ne prend que l'espace nécessaire */
+}
+
+
